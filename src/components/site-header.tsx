@@ -1,7 +1,7 @@
 import { Link, useRouterState } from "@tanstack/react-router";
 import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
-import { Button } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
 const NAV_LINKS = [
@@ -69,9 +69,12 @@ export function SiteHeader() {
         </nav>
 
         <div className="flex items-center gap-2">
-          <Button variant="primary" size="md" className="hidden sm:inline-flex" asChild={false}>
-            <Link to="/reservations">Reserve a Table</Link>
-          </Button>
+          <Link
+            to="/reservations"
+            className={cn(buttonVariants({ variant: "primary", size: "md" }), "hidden sm:inline-flex")}
+          >
+            Reserve a Table
+          </Link>
           <button
             type="button"
             className="inline-flex size-10 items-center justify-center rounded-full text-foreground transition-colors hover:bg-secondary lg:hidden"
