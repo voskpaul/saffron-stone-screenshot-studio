@@ -12,9 +12,9 @@ const ENQUIRY_TYPES = ["General", "Group events", "Feedback", "Careers", "Press"
 type EnquiryType = (typeof ENQUIRY_TYPES)[number];
 
 export const Route = createFileRoute("/contact")({
-  validateSearch: (search: Record<string, unknown>) => {
-    const raw = typeof search.type === "string" ? search.type : "";
-    return { type: (ENQUIRY_TYPES as readonly string[]).includes(raw) ? raw : "" } as { type: string };
+  validateSearch: (search: { type?: string }) => {
+    const requested = search.type ?? "";
+    return { type: (ENQUIRY_TYPES as readonly string[]).includes(requested) ? requested : "" };
   },
   component: ContactPage,
   head: () => ({

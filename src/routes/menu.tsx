@@ -13,8 +13,8 @@ type DietaryFilter = "All" | "Vegetarian" | "Vegan" | "Gluten-free option";
 const DIETARY_FILTERS: DietaryFilter[] = ["All", "Vegetarian", "Vegan", "Gluten-free option"];
 
 export const Route = createFileRoute("/menu")({
-  validateSearch: (search: Record<string, unknown>) => ({
-    category: typeof search.category === "string" ? search.category : "All",
+  validateSearch: (search: { category?: string }) => ({
+    category: search.category ?? "All",
   }),
   component: MenuPage,
   head: () => ({
