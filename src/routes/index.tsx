@@ -55,7 +55,7 @@ function Index() {
           </div>
           <p className="mt-6 flex flex-wrap items-center gap-2 text-sm text-primary-foreground/75">
             <Clock className="size-4 text-terracotta" aria-hidden />
-            {OPENING_HOURS[0].days} {OPENING_HOURS[0].hours} · {site.location.addressLine}, {site.location.area}
+            {OPENING_HOURS[0]!.days} {OPENING_HOURS[0]!.hours} · {site.location.addressLine}, {site.location.area}
           </p>
         </div>
       </section>
