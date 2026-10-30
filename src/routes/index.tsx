@@ -48,7 +48,7 @@ function Index() {
             <Link to="/reservations" className={buttonVariants({ variant: "terracotta", size: "lg" })}>
               Reserve a Table
             </Link>
-            <Link to="/menu" className={buttonVariants({ variant: "onDark", size: "lg" })}>
+            <Link to="/menu" search={{ category: "All" }} className={buttonVariants({ variant: "onDark", size: "lg" })}>
               Explore the Menu
               <ArrowRight aria-hidden />
             </Link>
@@ -103,7 +103,7 @@ function Index() {
             ))}
           </div>
           <div className="flex justify-center">
-            <Link to="/menu" className={buttonVariants({ variant: "primary" })}>
+            <Link to="/menu" search={{ category: "All" }} className={buttonVariants({ variant: "primary" })}>
               See the full menu
               <ArrowRight aria-hidden />
             </Link>
