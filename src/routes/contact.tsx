@@ -172,9 +172,9 @@ function ContactPage() {
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   className={inputClass}
-                  aria-invalid={!!errors.name}
+                  aria-invalid={!!errors["name"]}
                 />
-                {errors.name ? <p className={fieldError}>{errors.name.message}</p> : null}
+                {errors["name"] ? <p className={fieldError}>{errors["name"]}</p> : null}
               </div>
               <div className="space-y-1.5">
                 <label htmlFor="c-email" className="text-sm font-semibold">
@@ -188,9 +188,9 @@ function ContactPage() {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   className={inputClass}
-                  aria-invalid={!!errors.email}
+                  aria-invalid={!!errors["email"]}
                 />
-                {errors.email ? <p className={fieldError}>{errors.email.message}</p> : null}
+                {errors["email"] ? <p className={fieldError}>{errors["email"]}</p> : null}
               </div>
               <div className="space-y-1.5 sm:col-span-2">
                 <label htmlFor="c-message" className="text-sm font-semibold">
@@ -203,10 +203,10 @@ function ContactPage() {
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
                   className="w-full rounded-xl border border-input bg-card px-4 py-3 text-sm text-foreground shadow-sm outline-none transition-colors placeholder:text-muted-foreground focus:border-forest"
-                  aria-invalid={!!errors.message}
+                  aria-invalid={!!errors["message"]}
                   placeholder={enquiryType === "Group events" ? "Tell us the date, headcount and occasion…" : "How can we help?"}
                 />
-                {errors.message ? <p className={fieldError}>{errors.message.message}</p> : null}
+                {errors["message"] ? <p className={fieldError}>{errors["message"]}</p> : null}
               </div>
             </div>
 

@@ -11,3 +11,6 @@ per project stack. Source brief: uploaded markdown spec.
 - [x] Stage 3 — Reusable WhatsApp CTA (configurable number, demo notice fallback)
 - [x] Stage 4 — /about story page, location + opening-hours sections, group-enquiry section
 - [ ] Stage 5 — Verify responsive layouts, a11y, metadata, nav links, interactions (Playwright)
+  - [x] TypeScript errors fixed (pagination, contact, homepage) — tsgo clean
+  - [x] Playwright: all 5 pages render, header nav, menu filter + search, both forms validate and confirm, no console errors
+  - [ ] Responsive layouts + a11y + metadata spot-check
