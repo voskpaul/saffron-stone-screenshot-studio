@@ -2,6 +2,7 @@ import dishBigBreakfast from "@/assets/dish-big-breakfast.jpg";
 import dishBrisket from "@/assets/dish-brisket.jpg";
 import dishBreakfast from "@/assets/dish-breakfast.jpg";
 import dishChai from "@/assets/dish-chai.jpg";
+import dishPorridge from "@/assets/dish-porridge.jpg";
 import dishCoffee from "@/assets/dish-coffee.jpg";
 import dishCappuccino from "@/assets/dish-cappuccino.jpg";
 import dishCornPlantain from "@/assets/dish-corn-plantain.jpg";
