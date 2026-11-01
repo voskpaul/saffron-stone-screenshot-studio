@@ -1,4 +1,5 @@
 import dishBigBreakfast from "@/assets/dish-big-breakfast.jpg";
+import dishBrisket from "@/assets/dish-brisket.jpg";
 import dishBreakfast from "@/assets/dish-breakfast.jpg";
 import dishChai from "@/assets/dish-chai.jpg";
 import dishCoffee from "@/assets/dish-coffee.jpg";
